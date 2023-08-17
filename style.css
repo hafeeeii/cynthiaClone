@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.mini-circle {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.main {
+  background-color: black;
+  width: 100%;
+}
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+.bounding .bounding-elem {
+  transform: translateY(100%);
+}
+.bounding .bounding-elem2 {
+  transform: translateY(-180%);
+}
+
+.hero {
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.3vw 2.5vw;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+.header {
+  margin: 7vw 3.5vw;
+}
+.header h2 {
+  font-size: 10vw;
+  text-transform: uppercase;
+  line-height: 0.9;
+  opacity: 0.6;
+  letter-spacing: 0.3vw;
+}
+.header .header-container h2:nth-child(1) {
+  margin-left: 11vw;
+}
+.header .header-container {
+  width: fit-content;
+  display: flex;
+
+  flex-direction: column;
+  align-items: end;
+}
+.header .header-container h4 {
+  text-transform: uppercase;
+  margin-top: 1.3vw;
+  letter-spacing: 0.02vw;
+}
+.text1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 2.5vw;
+  text-transform: uppercase;
+  line-height: 2;
+}
+.herofooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.5vw;
+  align-items: center;
+  position: absolute;
+  bottom: 3%;
+  width: 100%;
+}
+.herofooter a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 550;
+}
+.herofooter a:nth-child(2) {
+  margin-right: 13vw;
+}
+
+.herofooter .circle-icon {
+  display: flex;
+  gap: 0.5vw;
+}
+
+.herofooter .circle-icon i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #888;
+  color: black;
+}
+
+#second {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  margin-top: 12vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  text-transform: uppercase;
+  margin-bottom: 7vw;
+}
+.elem {
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.elem1 {
+  border-top: 1px solid white;
+}
+.elem h1 {
+  font-size: 7vw;
+  padding: 3.5vw 0;
+  opacity: 0.7;
+  letter-spacing: 4px;
+}
+.elem h5 {
+  font-size: 1.1vw;
+  font-weight: 100;
+}
+.elem img {
+  opacity: 0;
+  pointer-events: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#about {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 10vw 3vw;
+  padding-left: 29vw;
+  gap: 90px;
+}
+#about img {
+  width: 232px;
+}
+.text-about h5 {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.text-about {
+  width: 50%;
+}
+.text-about p {
+  margin-top: 0.3vw;
+  font-weight: 350;
+  font-size: 19px;
+  line-height: 1.5;
+  margin-bottom: 2vw;
+}
+.text-about a {
+  padding: 6px 20px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3vw;
+  transition: all 1s ease;
+}
+.text-about a:hover {
+  background-color: white;
+  color: black;
+}
+
+.subscribe {
+  color: white;
+  text-transform: uppercase;
+  padding: 0 3vw;
+  line-height: 1.6;
+  margin-top: 3vw;
+  margin-bottom: 10vw;
+
+  letter-spacing: 1px;
+}
+.subscribe h5 {
+  opacity: 0.6;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 5vw;
+  padding: 1vw 3vw;
+}
+.footer-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+  font-size: 1.3vw;
+}
+.footer-right a {
+  text-decoration: none;
+  color: white;
+  margin-right: 44px;
+  font-weight: 500;
+  font-size: 15px;
+}
+.footer-right a:nth-child(4) {
+  margin-right: unset;
+}
